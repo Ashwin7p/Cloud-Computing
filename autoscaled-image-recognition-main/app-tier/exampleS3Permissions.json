@@ -1,0 +1,17 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "EC2Access",
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "arn:aws:iam::<accountID>:role/ec2_s3_sqs"
+      },
+      "Action": [
+        "s3:GetObject",
+        "s3:PutObject"
+      ],
+      "Resource": "arn:aws:s3:::cumulonimbus-clouds-images/*"
+    }
+  ]
+}

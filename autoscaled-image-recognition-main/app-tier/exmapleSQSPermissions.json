@@ -1,0 +1,16 @@
+{
+  "Version": "2012-10-17",
+  "Id": "__default_policy_ID",
+  "Statement": [
+    {
+      "Sid": "__owner_statement",
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "arn:aws:iam::059154684653:root",
+        "Service": "ec2.amazonaws.com"
+      },
+      "Action": "SQS:*",
+      "Resource": "arn:aws:sqs:us-east-1:059154684653:SQS-requests"
+    }
+  ]
+}
